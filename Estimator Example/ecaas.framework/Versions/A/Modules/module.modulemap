@@ -1,0 +1,8 @@
+framework module "Ecaas" {
+	header "ref.h"
+    header "Ecaas.objc.h"
+    header "Universe.objc.h"
+    header "Ecaas.h"
+
+    export *
+}
