@@ -12,7 +12,24 @@
 		1F0308CC1FD48B5B007B7DCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F0308CA1FD48B5B007B7DCF /* Main.storyboard */; };
 		1F0308CE1FD48B5B007B7DCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F0308CD1FD48B5B007B7DCF /* Assets.xcassets */; };
 		1F0308D11FD48B5B007B7DCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F0308CF1FD48B5B007B7DCF /* LaunchScreen.storyboard */; };
+		1F0308E31FD5753C007B7DCF /* MoveTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0308E21FD5753C007B7DCF /* MoveTypes.swift */; };
+		1F0481A51FD58B850055D0FD /* ecaas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0481A41FD58B7E0055D0FD /* ecaas.framework */; };
+		1F0481A61FD58B850055D0FD /* ecaas.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0481A41FD58B7E0055D0FD /* ecaas.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F0481A71FD58B850055D0FD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1F0481A61FD58B850055D0FD /* ecaas.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1F0308C31FD48B5B007B7DCF /* Estimator Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Estimator Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,7 +40,8 @@
 		1F0308D01FD48B5B007B7DCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F0308D21FD48B5B007B7DCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F0308E01FD49179007B7DCF /* Estimator-Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Estimator-Example-Bridging-Header.h"; sourceTree = "<group>"; };
-		1F0308E11FD49CF8007B7DCF /* ecaas.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ecaas.framework; sourceTree = "<group>"; };
+		1F0308E21FD5753C007B7DCF /* MoveTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveTypes.swift; sourceTree = "<group>"; };
+		1F0481A41FD58B7E0055D0FD /* ecaas.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ecaas.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F0481A51FD58B850055D0FD /* ecaas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,7 +61,7 @@
 			children = (
 				1F0308C51FD48B5B007B7DCF /* Estimator Example */,
 				1F0308C41FD48B5B007B7DCF /* Products */,
-				1F0308E11FD49CF8007B7DCF /* ecaas.framework */,
+				1F0481A41FD58B7E0055D0FD /* ecaas.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +83,7 @@
 				1F0308CF1FD48B5B007B7DCF /* LaunchScreen.storyboard */,
 				1F0308D21FD48B5B007B7DCF /* Info.plist */,
 				1F0308E01FD49179007B7DCF /* Estimator-Example-Bridging-Header.h */,
+				1F0308E21FD5753C007B7DCF /* MoveTypes.swift */,
 			);
 			path = "Estimator Example";
 			sourceTree = "<group>";
@@ -78,6 +98,7 @@
 				1F0308BF1FD48B5B007B7DCF /* Sources */,
 				1F0308C01FD48B5B007B7DCF /* Frameworks */,
 				1F0308C11FD48B5B007B7DCF /* Resources */,
+				1F0481A71FD58B850055D0FD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -94,6 +115,9 @@
 		1F0308BB1FD48B5B007B7DCF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					Local,
+				);
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Two Men and a Truck";
@@ -143,6 +167,7 @@
 			files = (
 				1F0308C91FD48B5B007B7DCF /* ViewController.swift in Sources */,
 				1F0308C71FD48B5B007B7DCF /* AppDelegate.swift in Sources */,
+				1F0308E31FD5753C007B7DCF /* MoveTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +245,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -271,6 +297,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -284,15 +311,18 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5222RY4Z7U;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Estimator Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.twomenandatruck.Estimator-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cqlcorp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Estimator Example/Estimator-Example-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,14 +333,17 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5222RY4Z7U;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Estimator Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.twomenandatruck.Estimator-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cqlcorp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Estimator Example/Estimator-Example-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
