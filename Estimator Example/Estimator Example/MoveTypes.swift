@@ -23,11 +23,11 @@ class MoveType: NSObject, EcaasMoveTypeProtocol {
 	func getMultiplier() -> String! {
 		return multiplier
 	}
-	
+
 	func getName() -> String! {
 		return name
 	}
-	
+
 	func getTaxRate() -> String! {
 		return taxRate
 	}

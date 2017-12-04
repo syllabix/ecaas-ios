@@ -137,6 +137,8 @@
                         <outlet property="estimateTotals" destination="ZCi-KU-8te" id="10p-yA-qNS"/>
                         <outlet property="estimatedHours" destination="yYx-tI-ebg" id="tKX-3H-tyO"/>
                         <outlet property="hourlyRate" destination="WwL-zx-3pz" id="gKh-EA-KWU"/>
+                        <outlet property="intlButton" destination="aHa-Lt-1QU" id="Ytp-aw-TCx"/>
+                        <outlet property="localButton" destination="DSN-lx-f1p" id="ADL-5O-ljj"/>
                         <outlet property="moveDate" destination="Mbn-CD-iRz" id="Kki-4p-1G1"/>
                     </connections>
                 </viewController>
